@@ -1,0 +1,489 @@
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8F5EA;
+    color: #26352B;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* MENÚ */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #164A32;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8BAF72;
+}
+
+
+/* INICIO */
+
+.inicio {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #E8E8D8;
+}
+
+.inicio-texto {
+    max-width: 700px;
+}
+
+.inicio h1 {
+    font-size: 52px;
+    color: #164A32;
+    margin: 0 0 10px 0;
+}
+
+.inicio h2 {
+    font-size: 28px;
+    color: #2F6B45;
+    margin: 0 0 20px 0;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #2F6B45;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 22px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background-color: #164A32;
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    padding: 60px 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #164A32;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* SOBRE NOSOTROS */
+
+.nosotros-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.nosotros-contenido div {
+    flex: 1;
+}
+
+
+.texto p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic
+}
+
+/* VIANDAS */
+
+.viandas-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.vianda {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.titulo-pagina {
+    padding: 30px 40px;
+}
+
+.vianda img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.vianda h3 {
+    color: #2F6B45;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.vianda p {
+    line-height: 1.5;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion-nutricional {
+    font-weight: bold;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background-color: #FFFFFF;
+}
+
+.contacto-enlaces {
+    margin-top: 25px;
+}
+
+/* BOTÓN DE INSTAGRAM */
+.boton-instagram {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 5px;
+background-color: #2F6B45;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.boton-instagram:hover {
+background-color: #164A32;
+color: #FFFFFF;
+}
+
+.icono-instagram {
+width: 22px;
+height: 22px;
+object-fit: contain;
+}
+
+/* BOTÓN DE WHATSAPP */
+.boton-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.icono-whatsapp {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #164A32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+/* =========================
+SHOTS NATURALES
+========================= */
+
+/* PRESENTACIÓN */
+
+.shots-presentacion {
+    background-color: #E8E8D8;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.shots-presentacion h1 {
+    color: #164A32;
+    font-size: 46px;
+    margin: 0 0 15px;
+}
+
+.shots-presentacion h2 {
+    color: #2F6B45;
+    font-size: 25px;
+    margin: 0 0 20px;
+}
+
+.shots-presentacion p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* DESCRIPCIÓN DEL CATÁLOGO */
+
+.shots-descripcion {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* CONTENEDOR DE TARJETAS */
+
+.shots-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* TARJETAS */
+
+.shot {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMÁGENES */
+
+.shot img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    background-color: #FFFFFF;
+    padding: 8px;
+}
+
+.shot img[alt*="Tropical Fresh"] {
+    padding: 8px 35px 8px 35px;
+}
+
+/* CONTENIDO DE CADA TARJETA */
+
+.shot-contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.shot h3 {
+    color: #2F6B45;
+    font-size: 23px;
+    margin: 0 0 15px;
+}
+
+.shot p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+.shot .shot-ingredientes {
+    color: #164A32;
+    font-weight: bold;
+}
+
+.shot .shot-volumen {
+    color: #2F6B45;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+/* ========================================
+   RESPONSIVE GENERAL DEL SITIO
+======================================== */
+
+
+/* ========================================
+   TABLETS Y PANTALLAS MEDIANAS
+   Hasta 1000 px
+======================================== */
+
+@media (max-width: 1000px) {
+
+    /* VIANDAS: dos columnas */
+    .viandas-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* SHOTS: dos columnas */
+    .shots-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   CELULARES
+   Hasta 768 px
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* ENCABEZADO */
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* MENÚ */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* INICIO */
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio h2 {
+        font-size: 24px;
+    }
+
+    /* SOBRE NOSOTROS */
+    .nosotros-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nosotros-contenido img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* SECCIONES */
+    .seccion {
+        padding: 45px 20px;
+    }
+
+    /* PRESENTACIÓN DE SHOTS */
+    .shots-presentacion {
+        padding: 40px 20px;
+    }
+
+    .shots-presentacion h1 {
+        font-size: 36px;
+    }
+
+    .shots-presentacion h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ========================================
+    CELULARES PEQUEÑOS
+    Hasta 600 px
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* VIANDAS: una columna */
+    .viandas-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* SHOTS: una columna */
+    .shots-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* IMÁGENES DE SHOTS */
+    .shot img {
+        height: 320px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* TÍTULOS DE SHOTS */
+    .shots-presentacion h1 {
+        font-size: 32px;
+    }
+
+    .shots-presentacion h2 {
+        font-size: 20px;
+    }
+
+    /* TÍTULOS DE SECCIONES */
+    .seccion h2 {
+        font-size: 27px;
+    }
+
+}
