@@ -53,6 +53,38 @@ nav a {
 nav a:hover {
     color: #8BAF72;
 }
+/* ==========================================
+   ACCESO AL CARRITO EN EL MENÚ
+========================================== */
+
+nav .enlace-carrito {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    white-space: nowrap;
+    padding: 4px 0;
+    color: #164A32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .enlace-carrito:hover {
+    color: #8BAF72;
+}
+
+nav .icono-carrito {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+nav .enlace-carrito span {
+    font-size: 14px;
+    line-height: 1;
+}
 
 
 /* INICIO */
@@ -250,9 +282,7 @@ footer {
 
 
 
-/* =========================
-SHOTS NATURALES
-========================= */
+/* SHOTS NATURALES */
 
 /* PRESENTACIÓN */
 
@@ -362,13 +392,12 @@ SHOTS NATURALES
 }
 
 /* ========================================
-   RESPONSIVE GENERAL DEL SITIO
+RESPONSIVE GENERAL DEL SITIO
 ======================================== */
 
 
 /* ========================================
-   TABLETS Y PANTALLAS MEDIANAS
-   Hasta 1000 px
+ABLETS Y PANTALLAS MEDIANAS Hasta 1000 px
 ======================================== */
 
 @media (max-width: 1000px) {
@@ -387,8 +416,7 @@ SHOTS NATURALES
 
 
 /* ========================================
-   CELULARES
-   Hasta 768 px
+CELULARES Hasta 768 px
 ======================================== */
 
 @media (max-width: 768px) {
@@ -449,8 +477,7 @@ SHOTS NATURALES
 
 
 /* ========================================
-    CELULARES PEQUEÑOS
-    Hasta 600 px
+    CELULARES PEQUEÑOS Hasta 600 px
 ======================================== */
 
 @media (max-width: 600px) {
@@ -484,6 +511,342 @@ SHOTS NATURALES
     /* TÍTULOS DE SECCIONES */
     .seccion h2 {
         font-size: 27px;
+    }
+
+}
+
+/* ==========================================
+   PRECIOS Y BOTONES DEL CATÁLOGO
+========================================== */
+
+.precio-producto {
+    color: #164A32;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boton-agregar {
+    display: inline-block;
+    background-color: #2F6B45;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-agregar:hover {
+    background-color: #164A32;
+}
+
+.boton-agregar:focus-visible {
+    outline: 3px solid #8BAF72;
+    outline-offset: 3px;
+}
+
+
+/* ==========================================
+   PÁGINA DEL CARRITO
+========================================== */
+
+.carrito-seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+.carrito-seccion h1 {
+    color: #164A32;
+    text-align: center;
+    font-size: 36px;
+}
+
+.carrito-seccion > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.producto-carrito {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #E8E8D8;
+}
+
+.producto-carrito h3 {
+    color: #164A32;
+    margin-top: 0;
+}
+
+.producto-carrito p {
+    line-height: 1.5;
+}
+
+.producto-carrito button {
+    background-color: #2F6B45;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 13px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+.producto-carrito button:hover {
+    background-color: #164A32;
+}
+
+.resumen-carrito {
+    background-color: #E8E8D8;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.resumen-carrito h2 {
+    color: #164A32;
+}
+
+.resumen-carrito p {
+    font-size: 22px;
+}
+
+.acciones-carrito {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.mensaje-carrito {
+    color: #164A32;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+#carrito-vacio {
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   ADAPTACIÓN DEL CARRITO A CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+    .carrito-seccion {
+        padding: 35px 15px;
+    }
+
+    .carrito-seccion h1 {
+        font-size: 30px;
+    }
+
+    .producto-carrito {
+        padding: 15px;
+    }
+
+    .resumen-carrito {
+        text-align: center;
+    }
+
+    .acciones-carrito {
+        flex-direction: column;
+    }
+
+    .acciones-carrito .boton {
+        text-align: center;
+    }
+
+}
+
+/* ==========================================
+   TARJETAS DEL CARRITO
+========================================== */
+
+.producto-carrito {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-areas:
+        "imagen nombre"
+        "imagen cantidad"
+        "imagen precio"
+        "imagen subtotal"
+        "imagen controles";
+
+    column-gap: 24px;
+    align-items: start;
+
+    background-color: #FFFFFF;
+    padding: 22px;
+    margin: 20px 0;
+
+    border: 1px solid #E8E8D8;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(22, 74, 50, 0.06);
+}
+
+
+/* IMAGEN */
+
+.imagen-producto-carrito {
+    grid-area: imagen;
+
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+    background-color: #F8F5EA;
+
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+/* NOMBRE */
+
+.producto-carrito h3 {
+    grid-area: nombre;
+
+    color: #164A32;
+    font-size: 21px;
+
+    margin: 0 0 12px;
+}
+
+
+/* CANTIDAD, PRECIO Y SUBTOTAL */
+
+.producto-carrito p:nth-of-type(1) {
+    grid-area: cantidad;
+}
+
+.producto-carrito p:nth-of-type(2) {
+    grid-area: precio;
+    color: #2F6B45;
+}
+
+.producto-carrito p:nth-of-type(3) {
+    grid-area: subtotal;
+
+    font-size: 17px;
+    font-weight: bold;
+    color: #26352B;
+}
+
+.producto-carrito p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+
+/* CONTENEDOR DE LOS TRES BOTONES */
+
+.controles-producto {
+    grid-area: controles;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 5px;
+}
+
+
+/* BOTONES */
+
+.controles-producto button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 36px;
+    padding: 8px 13px;
+
+    background-color: #2F6B45;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.controles-producto button:hover {
+    background-color: #164A32;
+}
+
+
+/* BOTONES DE CANTIDAD */
+
+.controles-producto .boton-cantidad {
+    width: 36px;
+    padding: 8px;
+}
+
+
+/* BOTÓN PARA QUITAR EL PRODUCTO */
+
+.controles-producto .boton-quitar {
+    padding: 8px 14px;
+}
+
+
+/* ==========================================
+   ADAPTACIÓN A CELULARES
+========================================== */
+
+@media (max-width: 600px) {
+
+    .producto-carrito {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "imagen"
+            "nombre"
+            "cantidad"
+            "precio"
+            "subtotal"
+            "controles";
+
+        padding: 18px;
+        row-gap: 10px;
+    }
+
+    .imagen-producto-carrito {
+        width: 100%;
+        max-width: 220px;
+        height: 180px;
+
+        margin: 0 auto 10px;
+    }
+
+    .producto-carrito h3 {
+        font-size: 19px;
+    }
+
+    .controles-producto {
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
 }

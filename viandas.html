@@ -7,6 +7,8 @@
 
     <title>Chez Marie | Viandas</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/productos.js" defer></script>
+<script src="js/carrito.js" defer></script>
 </head>
 
 <body>
@@ -25,6 +27,16 @@
                 <li><a href="viandas.html">Viandas</a></li>
                 <li><a href="shots.html">Shots</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
+                <li>
+    <a href="carrito.html" class="enlace-carrito" aria-label="Ver carrito">
+        <img
+            src="imagenes/shopping-cart.png"
+            alt=""
+            class="icono-carrito">
+
+        <span id="contador-carrito">0</span>
+    </a>
+</li>
             </ul>
         </nav>
 
@@ -61,6 +73,14 @@
                     <p>Hamburguesa con pan de garbanzos, una opción sin harina, baja en carbohidratos y alta en proteína.</p>
 
                     <p class="informacion-nutricional">360 kcal · 32 g de proteína</p>
+                    <p class="precio-producto"> $ 8.500 </p>
+
+    <button
+        type="button"
+        class="boton-agregar"
+        data-agregar-carrito="vianda-keto">
+        Agregar al carrito
+    </button>
 
                 </article>
 
@@ -78,6 +98,14 @@
                     </p>
 
                     <p class="informacion-nutricional"> 390 kcal · 38 g de proteína</p>
+                    <p class="precio-producto">$ 9.000 </p>
+
+    <button
+        type="button"
+        class="boton-agregar"
+        data-agregar-carrito="vianda-cesar">
+        Agregar al carrito
+    </button>
 
                 </article>
 
@@ -94,6 +122,14 @@
                     <p> Tarta de zucchini con huevos y muzzarella, una opción baja en carbohidratos,alta en proteína y sin harina. </p>
 
                     <p class="informacion-nutricional"> 220 kcal · 22 g de proteína </p>
+                    <p class="precio-producto"> $ 7.500 </p>
+
+    <button
+        type="button"
+        class="boton-agregar"
+        data-agregar-carrito="vianda-zucchini">
+        Agregar al carrito
+    </button>
 
                 </article>
 
@@ -110,6 +146,15 @@
                     <p>Combinación de boniato, carne picada y parmesano, pensada como una opción rica en proteína y energía. </p>
 
                     <p class="informacion-nutricional"> 680 kcal · 52 g de proteína </p>
+                    <p class="precio-producto"> $ 10.000
+    </p>
+
+    <button
+        type="button"
+        class="boton-agregar"
+        data-agregar-carrito="vianda-boniato">
+        Agregar al carrito
+    </button>
 
                 </article>
 

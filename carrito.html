@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chez Marie | Mi carrito</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="js/productos.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="logo">
+            <img
+                src="imagenes/logo_chez_Marie.jpeg"
+                alt="Logo de Chez Marie">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="viandas.html">Viandas</a></li>
+                <li><a href="shots.html">Shots</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <section class="carrito-seccion">
+
+            <h1>Mi carrito</h1>
+
+            <p>
+                Revisá los productos que seleccionaste.
+            </p>
+
+            <p
+                id="mensaje-carrito"
+                class="mensaje-carrito"
+                role="status"
+                aria-live="polite">
+            </p>
+
+            <p id="carrito-vacio" hidden>
+                Tu carrito está vacío.
+                <br>
+                Elegí tus productos en nuestros catálogos.
+            </p>
+
+            <div id="productos-carrito"></div>
+
+            <div class="resumen-carrito">
+
+                <h2>Resumen de compra</h2>
+
+                <p>
+                    Total:
+                    <strong id="total-carrito">$ 0</strong>
+                </p>
+
+            </div>
+
+            <div class="acciones-carrito">
+
+                <a href="viandas.html" class="boton">
+                    Seguir comprando
+                </a>
+
+                <a href="shots.html" class="boton">
+                    Ver shots
+                </a>
+                <a href="index.html" class="boton"> <!-- ENLAZAR CON WHATSAPP -->
+                    Confirmar pedido
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Chez Marie</p>
+    </footer>
+
+</body>
+
+</html>
