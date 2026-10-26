@@ -9,7 +9,7 @@ const productos = [
         nombre: "Hamburguesa Keto",
         categoria: "vianda",
         precio: 8500,
-        imagen: "/imagenes/keto_vianda.jpeg"
+        imagen: "imagenes/keto_vianda.jpeg"
     },
     {
         id: "vianda-cesar",
@@ -23,7 +23,7 @@ const productos = [
         nombre: "Tarta de zucchini",
         categoria: "vianda",
         precio: 7500,
-        imagen: "/imagenes/low carb_ vianda.jpeg"
+        imagen: "imagenes/low carb_ vianda.jpeg"
     },
     {
         id: "vianda-boniato",
@@ -39,7 +39,7 @@ const productos = [
         nombre: "Beet Boost",
         categoria: "shot",
         precio: 2500,
-        imagen: "/imagenes/shot_ Beet boost.jpeg"
+        imagen: "imagenes/shot_ Beet boost.jpeg"
     },
     {
         id: "shot-green-reset",
